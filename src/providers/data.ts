@@ -18,7 +18,7 @@ const options : CreateDataProviderOptions = {
       const params: Record<string, string|number>= { page , limit: pageSize};
 
       filters?.forEach((filter) => {
-        const field = 'field' in filter ? filter.field : ' ';
+        const field = 'field' in filter ? filter.field :'';
 
         const value = String(filter.value);
 
